@@ -1,0 +1,42 @@
+﻿@typeparam T
+@using System.Globalization;
+<div class="wheel-picker">
+    <div class="@($"wheel-picker-window {(Dense ? "dense": string.Empty)}")"></div>
+    <ul @ref="WheelContainer" class="wheel-picker-day" style="@($"height:{Height.ToString("0.00", CultureInfo.InvariantCulture)}rem;padding-top: {(Height/2).ToString("0.00", CultureInfo.InvariantCulture)}em;padding-bottom: {(Height/2).ToString("0.00", CultureInfo.InvariantCulture)}em;")">
+        @foreach (var item in Items.Select((value, i) => new { i, value }))
+        {
+            <li class="@GetClass(item.i)" style="@($"width:100%;height:{_elementHeight.ToString("0.00", CultureInfo.InvariantCulture)}em")">
+                @if (ItemTemplate != null)
+                {
+                    @ItemTemplate(item.value)
+                }
+                else
+                {
+                    <div class="scroll-item-container">
+
+                        @item.value
+                    </div>
+                }
+            </li>
+        }
+    </ul>
+</div>
+<style>
+    :root{
+        --wheelColor: @WheelColor;
+        --gradientColor:@GetColorWithOpacity(WheelColor, 70f);
+        --wheel-text-color: @TextColor;
+    }
+
+    .wheel-picker:before {
+        top: -0.2em;
+        height: @($"{_elementHeight}em");
+        background: linear-gradient(var(--wheelColor) 50%, var(--gradientColor) 100%);
+    }
+
+    .wheel-picker:after {
+        bottom: -0.2em;
+        height: @($"{_elementHeight}em");
+        background: linear-gradient(var(--gradientColor) 50%, var(--wheelColor) 100%);
+    }
+</style>

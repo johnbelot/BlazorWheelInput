@@ -1,0 +1,20 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<DateWheelSelect WheelLevel="2" Dense="true" @bind-Value="SelectedDate">
+</DateWheelSelect>
+<p>Selected Date : @SelectedDate.ToString("dd-MM-yyyy")</p>
+
+<WheelSelect Dense="true" Items="Items">
+    <ItemTemplate Context="test">
+        <div style="display:flex;flex-direction:row;align-items:center;justify-content:center">
+            @test
+        </div>
+    </ItemTemplate>
+</WheelSelect>
+@code
+{
+    DateTime SelectedDate = DateTime.Now;
+    public List<string> Items = new List<string>() { "Paris", "Rome", "London", "Berlin", "Madrid" };
+}

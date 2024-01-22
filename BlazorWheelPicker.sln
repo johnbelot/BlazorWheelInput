@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWheelPicker.Client", "BlazorWheelPicker\BlazorWheelPicker.Client.csproj", "{042B70ED-462D-4896-9AE9-2A8FB2FAC83C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWheelPickerLib", "BlazorWheelPickerLib\BlazorWheelPickerLib.csproj", "{B09AD8B7-9C44-4BA3-A939-CAD71C4B0FFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{042B70ED-462D-4896-9AE9-2A8FB2FAC83C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{042B70ED-462D-4896-9AE9-2A8FB2FAC83C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{042B70ED-462D-4896-9AE9-2A8FB2FAC83C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{042B70ED-462D-4896-9AE9-2A8FB2FAC83C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B09AD8B7-9C44-4BA3-A939-CAD71C4B0FFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B09AD8B7-9C44-4BA3-A939-CAD71C4B0FFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B09AD8B7-9C44-4BA3-A939-CAD71C4B0FFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B09AD8B7-9C44-4BA3-A939-CAD71C4B0FFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7B01A82-62C3-4A23-81DB-50A307C209A1}
+	EndGlobalSection
+EndGlobal

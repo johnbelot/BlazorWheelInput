@@ -1,0 +1,17 @@
+﻿<div style="width:100%">
+    <div style="margin-bottom:10%;display:flex;align-content:center;justify-content:center;flex-direction:row">
+        <div style="width:33%">
+            <WheelSelect Dense="Dense" Value="Value.Day" ValueChanged="OnDayChanged" T="int" WheelLevel="WheelLevel" Items="Days"></WheelSelect>
+            <!-- <SFWheel Value="SelectedDate.Day" ValueChanged="OnDayChanged" WheelLevel="2" T="int" ItemCollection="Days"></SFWheel>-->
+        </div>
+        <div style="width:33%">
+            <WheelSelect Dense="Dense" Value="Value.Month" ValueChanged="OnMonthChanged" T="int" WheelLevel="WheelLevel" Items="Months">
+            </WheelSelect>
+            <!--  <SFWheel Value="SelectedDate.Month" ValueChanged="OnMonthChanged" WheelLevel="2" T="int" ItemCollection="Months"></SFWheel>-->
+        </div>
+        <div style="width:33%">
+            <WheelSelect Dense="Dense" Value="Value.Year" ValueChanged="OnYearChanged" T="int" WheelLevel="WheelLevel" Items="Years"></WheelSelect>
+            <!-- <SFWheel Value="SelectedDate.Year" ValueChanged="OnYearChanged" WheelLevel="2" T="int" ItemCollection="Years"></SFWheel>-->
+        </div>
+    </div>
+</div>
