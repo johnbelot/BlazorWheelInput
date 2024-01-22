@@ -12,6 +12,9 @@ namespace BlazorWheelPickerLib
         public int WheelLevel { get; set; } = 2;
 
         [Parameter]
+        public string Style { get; set; }
+
+        [Parameter]
         public EventCallback<DateTime> ValueChanged { get; set; }
 
         [Parameter]

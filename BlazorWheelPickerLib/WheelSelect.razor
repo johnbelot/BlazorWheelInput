@@ -1,6 +1,6 @@
 ﻿@typeparam T
 @using System.Globalization;
-<div class="wheel-picker">
+<div class="wheel-picker" style="@Style">
     <div class="@($"wheel-picker-window {(Dense ? "dense": string.Empty)}")"></div>
     <ul @ref="WheelContainer" class="wheel-picker-day" style="@($"height:{Height.ToString("0.00", CultureInfo.InvariantCulture)}rem;padding-top: {(Height/2).ToString("0.00", CultureInfo.InvariantCulture)}em;padding-bottom: {(Height/2).ToString("0.00", CultureInfo.InvariantCulture)}em;")">
         @foreach (var item in Items.Select((value, i) => new { i, value }))

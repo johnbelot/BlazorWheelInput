@@ -31,6 +31,9 @@ namespace BlazorWheelPickerLib
         public bool Dense { get; set; }
 
         [Parameter]
+        public string Style { get; set; }
+
+        [Parameter]
         public string WheelColor { get; set; } = "#ffffff";
 
         [Parameter]

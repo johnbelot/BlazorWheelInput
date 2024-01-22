@@ -5,9 +5,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
  <PropertyGroup>
-     <PackageLicenseFile>license.txt</PackageLicenseFile>
+     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
   <PackageId>BlazorWheelPicker</PackageId>
-  <Version>1.0.0-beta.1</Version>
+  <Version>1.0.0-beta.2</Version>
   <Authors>Jonathan Belot</Authors>
   <PackageTags>Blazor;wheel;mobile;select;picker</PackageTags>
 </PropertyGroup>
@@ -20,7 +20,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.0" />
   </ItemGroup>
     <ItemGroup>
-        <None Include="LICENSE" Pack="true" PackagePath="LICENSE" />
+        <None Include="LICENSE.md" Pack="true" PackagePath="LICENSE.md" />
     </ItemGroup>
 
 </Project>
