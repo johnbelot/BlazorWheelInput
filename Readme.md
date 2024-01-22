@@ -62,7 +62,7 @@ This contains 2 components : **WheelSelect** and **DateWheelSelect**, the later 
 }
 ```
 
-![Example of wheel select]()
+![Example of wheel select](https://github.com/johnbelot/BlazorWheelInput/blob/main/SimpleWheel.gif)
 
 ### DateWheelSelect
 
@@ -87,7 +87,7 @@ This contains 2 components : **WheelSelect** and **DateWheelSelect**, the later 
 }
 ```
 
-![Example of date wheel select]()
+![Example of date wheel select](https://github.com/johnbelot/BlazorWheelInput/blob/main/DateWheel.gif)
 
 
 ## Misc
