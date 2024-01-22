@@ -17,15 +17,21 @@ or simply add the reference in your .csproj file:
 
 Add the **css** reference to your **index.html** file located in /wwwroot
 
-```<link href="_content/BlazorWheelPicker/BlazorWheelPicker.css" rel="stylesheet" />```
+```html
+<link href="_content/BlazorWheelPicker/BlazorWheelPicker.css" rel="stylesheet" />
+```
 
 And the **javascript**:
 
-```<script src="_content/BlazorWheelPicker/wheelpicker.js"></script>```
+```html
+<script src="_content/BlazorWheelPicker/wheelpicker.js"></script>
+```
 
 And finally add the namespace reference to _Imports.razor for more practicality:
 
-```@using BlazorWheelPickerLib;```
+```cs
+@using BlazorWheelPickerLib;
+```
 
 ## Usage
 
@@ -47,7 +53,7 @@ This contains 2 components : **WheelSelect** and **DateWheelSelect**, the later 
 | ItemTemplate  |  RenderFragment<T>  |  Custom render template for rows| - |
 
 #### Example:
-```
+```cs
 <WheelSelect @bind-Value="_selectedCity" Style="width:50%" Dense="true" T="string" Items="Items">
     <ItemTemplate Context="test">
         <div style="display:flex;flex-direction:row;align-items:center;justify-content:center">
@@ -77,7 +83,7 @@ This contains 2 components : **WheelSelect** and **DateWheelSelect**, the later 
 | ValueChanged  |  DateTime  |  DateTime Value changed event (or use @bind-Value)| - |
 
 #### Example:
-```
+```cs
 <DateWheelSelect WheelLevel="2" Dense="true" @bind-Value="SelectedDate">
 </DateWheelSelect>
 <p>Selected Date : @SelectedDate.ToString("dd-MM-yyyy")</p>
@@ -94,7 +100,9 @@ This contains 2 components : **WheelSelect** and **DateWheelSelect**, the later 
 
 If used with MAUI, i suggest to add a vibration when a value is changed :
 
-```HapticFeedback.Default.Perform(HapticFeedbackType.Click);```
+```cs
+HapticFeedback.Default.Perform(HapticFeedbackType.Click);
+```
 
 ## License
 
