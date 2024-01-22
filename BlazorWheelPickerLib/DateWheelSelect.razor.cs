@@ -6,6 +6,12 @@ namespace BlazorWheelPickerLib
 	public partial class DateWheelSelect : ComponentBase
 	{
         [Parameter]
+        public string WheelColor { get; set; } = "#ffffff";
+
+        [Parameter]
+        public string TextColor { get; set; } = "#000000";
+
+        [Parameter]
         public bool Dense { get; set; }
 
         [Parameter]
@@ -18,10 +24,10 @@ namespace BlazorWheelPickerLib
         public EventCallback<DateTime> ValueChanged { get; set; }
 
         [Parameter]
-        public DateTime? MinDate { get; set; }
+        public DateTime? MinYear { get; set; }
 
         [Parameter]
-        public DateTime? MaxDate { get; set; }
+        public DateTime? MaxYear { get; set; }
 
         public WheelSelect<int> DayWheel { get; set; }
 
@@ -48,7 +54,7 @@ namespace BlazorWheelPickerLib
         {
             get
             {
-                return Enumerable.Range(MinDate.HasValue ? MinDate.Value.Year : 1970, MaxDate.HasValue && MinDate.HasValue ? (MaxDate.Value.Year - MinDate.Value.Year) : 100).ToList();
+                return Enumerable.Range(MinYear.HasValue ? MinYear.Value.Year : 1970, MaxYear.HasValue && MinYear.HasValue ? ((MaxYear.Value.Year - MinYear.Value.Year) + 1) : 100).ToList();
             }
         }
 

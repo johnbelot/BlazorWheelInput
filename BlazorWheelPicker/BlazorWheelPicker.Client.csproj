@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>5f626e2d-7b3e-4ce1-b408-e28a5867bea6</UserSecretsId>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' ">
@@ -11,7 +12,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.0" PrivateAssets="all" />
-    <PackageReference Include="BlazorWheelPicker" Version="1.0.0-beta.2" />
+    <PackageReference Include="BlazorWheelPicker" Version="1.0.0-beta.10" />
   </ItemGroup>
 
   <ItemGroup>

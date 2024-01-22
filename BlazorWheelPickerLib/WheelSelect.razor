@@ -1,11 +1,11 @@
 ﻿@typeparam T
 @using System.Globalization;
-<div class="wheel-picker" style="@Style">
-    <div class="@($"wheel-picker-window {(Dense ? "dense": string.Empty)}")"></div>
+<div class="@($"wheel-picker wheel-picker-{_instanceId}")" style="@Style">
+    <div class="@($"wheel-picker-window-{_instanceId} {(Dense ? "dense": string.Empty)}")"></div>
     <ul @ref="WheelContainer" class="wheel-picker-day" style="@($"height:{Height.ToString("0.00", CultureInfo.InvariantCulture)}rem;padding-top: {(Height/2).ToString("0.00", CultureInfo.InvariantCulture)}em;padding-bottom: {(Height/2).ToString("0.00", CultureInfo.InvariantCulture)}em;")">
         @foreach (var item in Items.Select((value, i) => new { i, value }))
         {
-            <li class="@GetClass(item.i)" style="@($"width:100%;height:{_elementHeight.ToString("0.00", CultureInfo.InvariantCulture)}em")">
+            <li class="@GetClass(item.i)" style="@($"width:100%;height:{_elementHeight.ToString("0.00", CultureInfo.InvariantCulture)}em;color:{TextColor}")">
                 @if (ItemTemplate != null)
                 {
                     @ItemTemplate(item.value)
@@ -21,22 +21,47 @@
         }
     </ul>
 </div>
+
 <style>
-    :root{
+    .wheel-picker{
         --wheelColor: @WheelColor;
         --gradientColor:@GetColorWithOpacity(WheelColor, 70f);
         --wheel-text-color: @TextColor;
     }
 
-    .wheel-picker:before {
+    .wheel-picker-@_instanceId:before {
         top: -0.2em;
         height: @($"{_elementHeight}em");
-        background: linear-gradient(var(--wheelColor) 50%, var(--gradientColor) 100%);
+        background: linear-gradient(@WheelColor 50%, @GetColorWithOpacity(WheelColor, 70f) 100%);
     }
 
-    .wheel-picker:after {
+    .wheel-picker-@_instanceId:after {
         bottom: -0.2em;
         height: @($"{_elementHeight}em");
-        background: linear-gradient(var(--gradientColor) 50%, var(--wheelColor) 100%);
+        background: linear-gradient(@GetColorWithOpacity(WheelColor, 70f) 50%, @WheelColor 100%);
     }
+
+    .wheel-picker-window-@_instanceId {
+        position: absolute;
+        border-top: 1px solid @TextColor;
+        border-bottom: 1px solid @TextColor;
+        height: 2.4em;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        pointer-events: none;
+    }
+
+        .wheel-picker-window-@(_instanceId).dense {
+            position: absolute;
+            border-top: 1px solid @TextColor;
+            border-bottom: 1px solid @TextColor;
+            height: 1.4em;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            pointer-events: none;
+        }
 </style>

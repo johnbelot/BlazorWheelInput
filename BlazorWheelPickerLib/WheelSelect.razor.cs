@@ -54,6 +54,7 @@ namespace BlazorWheelPickerLib
 
         private float _elementHeight => Dense ? 1.4f : 2.4f;
         private int _selectedIndex;
+        private Guid _instanceId = Guid.NewGuid();
 
         protected override async Task OnAfterRenderAsync(bool firstRender)
         {

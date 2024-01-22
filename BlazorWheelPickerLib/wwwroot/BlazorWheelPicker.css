@@ -37,7 +37,6 @@
     .wheel-picker li {
         scroll-snap-align: center;
         width: 100%;
-        color: var( --wheel-text-color);
         text-align: center;
         display: flex;
         flex-direction: row;
@@ -64,30 +63,6 @@
 
     .scroll-item.active {
         font-weight: bold;
-    }
-
-.wheel-picker-window {
-    position: absolute;
-    border-top: 1px solid var(--wheel-text-color);
-    border-bottom: 1px solid var(--wheel-text-color);
-    height: 2.4em;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    pointer-events: none;
-}
-
-    .wheel-picker-window.dense {
-        position: absolute;
-        border-top: 1px solid var(--wheel-text-color);
-        border-bottom: 1px solid var(--wheel-text-color);
-        height: 1.4em;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 100%;
-        pointer-events: none;
     }
 
 .scroll-item-container {

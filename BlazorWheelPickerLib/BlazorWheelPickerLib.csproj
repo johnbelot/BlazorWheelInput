@@ -7,9 +7,14 @@
  <PropertyGroup>
      <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
   <PackageId>BlazorWheelPicker</PackageId>
-  <Version>1.0.0-beta.2</Version>
+  <Version>1.0.0-beta.10</Version>
   <Authors>Jonathan Belot</Authors>
-  <PackageTags>Blazor;wheel;mobile;select;picker</PackageTags>
+  <PackageTags>Blazor;wheel;mobile;select;picker;ios</PackageTags>
+  <Description>
+      BlazorWheelPicker is a tiny NuGet package containing two component for Blazor mimicking the iOS style wheel select input. It is pretty handy for developers using Blazor on MAUI app or for a mobile version of your website.
+  </Description>
+  <PackageProjectUrl>https://github.com/johnbelot/BlazorWheelInput</PackageProjectUrl>
+  <PackageReadmeFile>Readme.md</PackageReadmeFile>
 </PropertyGroup>
 
   <ItemGroup>
@@ -21,6 +26,7 @@
   </ItemGroup>
     <ItemGroup>
         <None Include="LICENSE.md" Pack="true" PackagePath="LICENSE.md" />
+        <None Include="Readme.md" Pack="true" PackagePath="Readme.md" />
     </ItemGroup>
 
 </Project>

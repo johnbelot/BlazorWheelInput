@@ -24,7 +24,7 @@
             container.querySelectorAll('.scroll-item').forEach((item, index) => {
                 const itemTop = item.getBoundingClientRect().top;
                 const distance = Math.abs(itemTop - containerTop);
-                console.log(distance);
+
                 if (distance < minDistance) {
                     minDistance = distance;
                     closestElement = { index, id: item.id };
