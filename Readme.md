@@ -1,15 +1,20 @@
 # BlazorWheelPicker
 
 
-BlazorWheelPicker is a tiny NuGet package containing two component for Blazor mimicking the iOS style wheel select input. It is pretty handy for developers using Blazor for MAUI app of for a mobile version of your website.
+BlazorWheelPicker is a tiny NuGet package containing two component for Blazor mimicking the iOS style wheel select input. It is pretty handy for developers using Blazor on MAUI app or for a mobile version of your website.
 
-I used this codepen for the css part from [Max Kohler](https://codepen.io/maxakohler) which made me discover css scroll snapping : [https://codepen.io/maxakohler/pen/JZgXxe](https://codepen.io/maxakohler/pen/JZgXxe)
+I used this codepen from [Max Kohler](https://codepen.io/maxakohler) for the css part  which made me discover css scroll snapping : [https://codepen.io/maxakohler/pen/JZgXxe](https://codepen.io/maxakohler/pen/JZgXxe)
 
 
 ## Get Started
 
 Add the NuGet package via Package Manager:
-```NuGet\Install-Package BlazorWheelPicker -Version 1.0.0``
+
+```NuGet\Install-Package BlazorWheelPicker ```
+
+via CLI : 
+
+```dotnet add package BlazorWheelPicker```
 
 or simply add the reference in your .csproj file:
 
