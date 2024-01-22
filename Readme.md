@@ -10,15 +10,21 @@ I used this codepen from [Max Kohler](https://codepen.io/maxakohler) for the css
 
 Add the NuGet package via Package Manager:
 
-```NuGet\Install-Package BlazorWheelPicker ```
+```
+NuGet\Install-Package BlazorWheelPicker 
+```
 
 via CLI : 
 
-```dotnet add package BlazorWheelPicker```
+```
+dotnet add package BlazorWheelPicker
+```
 
 or simply add the reference in your .csproj file:
 
-```<PackageReference Include="BlazorWheelPicker" Version="1.0.0" />```
+```
+<PackageReference Include="BlazorWheelPicker" Version="1.0.0" />
+```
 
 Add the **css** reference to your **index.html** file located in /wwwroot
 
