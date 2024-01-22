@@ -29,7 +29,7 @@ And the **javascript**:
 
 And finally add the namespace reference to _Imports.razor for more practicality:
 
-```cs
+```razor
 @using BlazorWheelPickerLib;
 ```
 
@@ -53,7 +53,7 @@ This contains 2 components : **WheelSelect** and **DateWheelSelect**, the later 
 | ItemTemplate  |  RenderFragment<T>  |  Custom render template for rows| - |
 
 #### Example:
-```cs
+```razor
 <WheelSelect @bind-Value="_selectedCity" Style="width:50%" Dense="true" T="string" Items="Items">
     <ItemTemplate Context="test">
         <div style="display:flex;flex-direction:row;align-items:center;justify-content:center">
@@ -83,7 +83,7 @@ This contains 2 components : **WheelSelect** and **DateWheelSelect**, the later 
 | ValueChanged  |  DateTime  |  DateTime Value changed event (or use @bind-Value)| - |
 
 #### Example:
-```cs
+```razor
 <DateWheelSelect WheelLevel="2" Dense="true" @bind-Value="SelectedDate">
 </DateWheelSelect>
 <p>Selected Date : @SelectedDate.ToString("dd-MM-yyyy")</p>
