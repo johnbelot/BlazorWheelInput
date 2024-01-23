@@ -31,6 +31,9 @@ namespace BlazorWheelPickerLib
         public bool Dense { get; set; }
 
         [Parameter]
+        public bool SelectionLines { get; set; } = true;
+
+        [Parameter]
         public string Style { get; set; }
 
         [Parameter]

@@ -1,13 +1,13 @@
 ﻿<div style="@($"width:100%;{Style}")">
     <div style="margin-bottom:10%;display:flex;align-content:center;justify-content:center;flex-direction:row">
         <div style="width:33%">
-            <WheelSelect Dense="Dense" Value="Value.Day" ValueChanged="OnDayChanged" T="int" WheelLevel="WheelLevel" Items="Days" TextColor="@TextColor" WheelColor="@WheelColor"></WheelSelect>
+            <WheelSelect SelectionLines="SelectionLines" Dense="Dense" Value="@Value.Day" ValueChanged="OnDayChanged" T="int" WheelLevel="WheelLevel" Items="Days" TextColor="@TextColor" WheelColor="@WheelColor"></WheelSelect>
         </div>
         <div style="width:33%">
-            <WheelSelect Dense="Dense" Value="Value.Month" ValueChanged="OnMonthChanged" T="int" WheelLevel="WheelLevel" Items="Months" TextColor="@TextColor" WheelColor="@WheelColor"></WheelSelect>
+            <WheelSelect SelectionLines="SelectionLines" Dense="Dense" Value="Value.Month" ValueChanged="OnMonthChanged" T="int" WheelLevel="WheelLevel" Items="Months" TextColor="@TextColor" WheelColor="@WheelColor"></WheelSelect>
         </div>
         <div style="width:33%">
-            <WheelSelect Dense="Dense" Value="Value.Year" ValueChanged="OnYearChanged" T="int" WheelLevel="WheelLevel" Items="Years" TextColor="@TextColor" WheelColor="@WheelColor"></WheelSelect>
+            <WheelSelect SelectionLines="SelectionLines" Dense="Dense" Value="Value.Year" ValueChanged="OnYearChanged" T="int" WheelLevel="WheelLevel" Items="Years" TextColor="@TextColor" WheelColor="@WheelColor"></WheelSelect>
         </div>
     </div>
 </div>

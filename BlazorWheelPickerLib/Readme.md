@@ -8,13 +8,13 @@ I used this codepen from [Max Kohler](https://codepen.io/maxakohler) for the css
 
 ## Get Started
 
-Add the NuGet package via Package Manager:
+Add the NuGet package via **Package Manager**:
 
 ```
 NuGet\Install-Package BlazorWheelPicker 
 ```
 
-via CLI : 
+via **CLI** : 
 
 ```
 dotnet add package BlazorWheelPicker
@@ -38,7 +38,7 @@ And the **javascript**:
 <script src="_content/BlazorWheelPicker/wheelpicker.js"></script>
 ```
 
-And finally add the namespace reference to _Imports.razor for more practicality:
+And finally add the namespace reference to **_Imports.razor** for more practicality:
 
 ```razor
 @using BlazorWheelPickerLib;
@@ -56,6 +56,7 @@ This contains 2 components : **WheelSelect** and **DateWheelSelect**, the later 
 | T |   |  Type of the selectable items | - |
 | Items  |  T | Selectable item list  | - |
 | WheelLevel  | int  |  Level of displayed items | 2 |
+| SelectionLines  | boolean  |  Whether or not selection line in the middle are displayed| true |
 | Dense  | boolean  |  Whether or not the item rows are dense| false |
 | WheelColor  | string  |  Hexadecimal value of the background wheel color| #ffffff |
 | TextColor  | string  |  Hexadecimal value of the text color| #000000 |
@@ -88,6 +89,7 @@ This contains 2 components : **WheelSelect** and **DateWheelSelect**, the later 
 | Style |  string |  Additional style you want to apply | - |
 | WheelLevel  | int  |  Level of displayed items | 2 |
 | Dense  | boolean  |  Whether or not the item rows are dense| false |
+| SelectionLines  | boolean  |  Whether or not selection line in the middle are displayed| true |
 | WheelColor  | string  |  Hexadecimal value of the background wheel color| #ffffff |
 | TextColor  | string  |  Hexadecimal value of the text color| #000000 |
 | Value  | DateTime  |  Selected DateTime value of the picker (or use @bind-Value)| -|

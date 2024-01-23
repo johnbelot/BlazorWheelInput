@@ -18,6 +18,9 @@ namespace BlazorWheelPickerLib
         public int WheelLevel { get; set; } = 2;
 
         [Parameter]
+        public bool SelectionLines { get; set; }
+
+        [Parameter]
         public string Style { get; set; }
 
         [Parameter]

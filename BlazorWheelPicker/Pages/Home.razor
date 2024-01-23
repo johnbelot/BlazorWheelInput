@@ -1,6 +1,6 @@
 ﻿@page "/"
 
-<DateWheelSelect MaxYear="DateTime.Now.AddYears(40)" MinYear="DateTime.Now.AddYears(-40)" WheelLevel="2" Dense="false" @bind-Value="SelectedDate">
+<DateWheelSelect SelectionLines="false" MaxYear="DateTime.Now.AddYears(40)" MinYear="DateTime.Now.AddYears(-40)" WheelLevel="2" Dense="false" @bind-Value="SelectedDate">
     </DateWheelSelect>
     <p>Selected Date : @SelectedDate.ToString("dd-MM-yyyy")</p>
 
