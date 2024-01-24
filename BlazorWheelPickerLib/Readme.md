@@ -23,7 +23,7 @@ dotnet add package BlazorWheelPicker
 or simply add the reference in your .csproj file:
 
 ```
-<PackageReference Include="BlazorWheelPicker" Version="1.0.0" />
+<PackageReference Include="BlazorWheelPicker" Version="1.0.1" />
 ```
 
 Add the **css** reference to your **index.html** file located in /wwwroot
