@@ -1,12 +1,12 @@
 ﻿@page "/"
 
-<DateWheelSelect SelectionLines="false" MaxYear="DateTime.Now.AddYears(40)" MinYear="DateTime.Now.AddYears(-40)" WheelLevel="2" Dense="false" @bind-Value="SelectedDate">
+<DateWheelSelect SelectionLines="false" MaxYear="DateTime.Now.AddYears(40)" MinYear="DateTime.Now.AddYears(-40)" WheelLevel="2" Dense="true" @bind-Value="SelectedDate">
     </DateWheelSelect>
     <p>Selected Date : @SelectedDate.ToString("dd-MM-yyyy")</p>
 
     <WheelSelect @bind-Value="_selectedCity" Style="width:50%" Dense="true" T="string" Items="Items">
         <ItemTemplate Context="test">
-            <div style="display:flex;flex-direction:row;align-items:center;justify-content:center">
+            <div style="display:flex;flex-direction:row;align-items:center;justify-content:center;width:100%">
                 @test
             </div>
         </ItemTemplate>
