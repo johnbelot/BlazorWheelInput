@@ -1,5 +1,6 @@
 # BlazorWheelPicker
-
+![NuGet Version](https://img.shields.io/nuget/v/BlazorWheelPicker)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 BlazorWheelPicker is a tiny NuGet package containing two component for Blazor mimicking the iOS style wheel select input. It is pretty handy for developers using Blazor on MAUI app or for a mobile version of your website.
 
@@ -23,7 +24,7 @@ dotnet add package BlazorWheelPicker
 or simply add the reference in your .csproj file:
 
 ```
-<PackageReference Include="BlazorWheelPicker" Version="1.0.1" />
+<PackageReference Include="BlazorWheelPicker" Version="1.0.0" />
 ```
 
 Add the **css** reference to your **index.html** file located in /wwwroot
